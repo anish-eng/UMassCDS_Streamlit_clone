@@ -11,6 +11,8 @@ from streamlit_template_pkg.data_utils import (
     INSTITUTION_COL,
     AWARD_TYPE_COL,
     DISPLAY_LABELS,
+    RACE_ETHNICITY_COL
+    
 )
 from streamlit_template_pkg.visualizations import create_degrees_over_time_chart
 
@@ -25,7 +27,7 @@ st.write("Visualize the trend of postsecondary degrees conferred at Massachusett
 st.sidebar.header("Visualization Options")
 color_by = st.sidebar.radio(
     "Color lines by:",
-    options=[SEGMENT_COL, AWARD_TYPE_COL],
+    options=[SEGMENT_COL, AWARD_TYPE_COL,RACE_ETHNICITY_COL],
     format_func=DISPLAY_LABELS.get,
     help="Choose how to group and color the lines in the plot",
 )
