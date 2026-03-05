@@ -12,8 +12,9 @@ from streamlit_template_pkg.data_utils import (
     AWARDS_CONFERRED_COL,
     INSTITUTION_COL,
     AWARD_TYPE_COL,
-    GENDER_COL,
     RACE_ETHNICITY_COL,
+    GENDER_COL,
+    
 )
 from streamlit_template_pkg.visualizations import create_institution_bar_chart
 
@@ -37,7 +38,7 @@ selected_institution = st.sidebar.selectbox(
 # Breakdown option
 breakdown_by = st.sidebar.radio(
     "Detailed breakdown by:",
-    options=[GENDER_COL, AWARD_TYPE_COL, RACE_ETHNICITY_COL],
+    options=[GENDER_COL, AWARD_TYPE_COL,RACE_ETHNICITY_COL],
     format_func=DISPLAY_LABELS.get,
     help="Choose how to break down and color the bars in the chart",
 )

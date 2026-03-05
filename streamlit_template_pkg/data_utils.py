@@ -16,6 +16,12 @@ AWARDS_LABEL = "Number of degrees awarded"
 SEGMENT_COL = "SEGMENT"
 SEGMENT_LABEL = "Type of institution"
 
+SEGMENT_RACE = "RACE_ETHNICITY"
+SEGMENT_LABEL = "Race of students"
+
+RACE_ETHNICITY_COL = "RACE_ETHNICITY"
+RACE_ETHNICITY_LABEL = "Race or ethnicity of degree awardee"
+
 INSTITUTION_COL = "INSTITUTION"
 INSTITUTION_LABEL = "Name of institution"
 
@@ -28,8 +34,7 @@ AWARD_TYPE_ORDER_LABEL = "Ordered rank of degree"
 GENDER_COL = "GENDER"
 GENDER_LABEL = "Gender of degree awardee"
 
-RACE_ETHNICITY_COL = "RACE_ETHNICITY"
-RACE_ETHNICITY_LABEL = "Race or ethnicity of degree awardee"
+
 
 # Meaningful labels for columns
 DISPLAY_LABELS = {
@@ -41,6 +46,7 @@ DISPLAY_LABELS = {
     AWARD_TYPE_ORDER_COL: AWARD_TYPE_ORDER_LABEL,
     GENDER_COL: GENDER_LABEL,
     RACE_ETHNICITY_COL: RACE_ETHNICITY_LABEL,
+    
 }
 
 
